@@ -1,0 +1,23 @@
+spotify
+clientId: '49b5a4f759df4eaa889b76f00be2b9f2',
+  clientSecret: '42506de4f9e947bdaf28dfa60ec0f2de',
+
+youtube api key apiKey: 'AIzaSyDcwPJTtSyL2m48TQQCV1g34jdl6vjFac4',
+import { initializeApp } from 'firebase/app';
+import { getAuth } from 'firebase/auth';
+import { getFirestore } from 'firebase/firestore';
+
+const firebaseConfig = {
+  apiKey: "AIzaSyBn7IXt-Gu9MA8238ZnsI0LawntrdimLbo",
+  authDomain: "beatquest-c0e0c.firebaseapp.com",
+  projectId: "beatquest-c0e0c",
+  storageBucket: "beatquest-c0e0c.appspot.com",
+  messagingSenderId: "350395451940",
+  appId: "1:350395451940:web:AIzaSyBn7IXt-Gu9MA8238ZnsI0LawntrdimLbo"
+};
+
+const app = initializeApp(firebaseConfig);
+export const auth = getAuth(app);
+export const db = getFirestore(app);
+
+export default app; 
